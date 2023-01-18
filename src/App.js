@@ -1,13 +1,8 @@
-import styles from "./index.scss";
-import Card from "./Components/Card";
+import Main from './containers/Main/Main';
 
 function App() {
   return (
-    <div>
-      <Card />
-      <Card />
-      <Card />
-    </div>
+    <Main />
   );
 }
 

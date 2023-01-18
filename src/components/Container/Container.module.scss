@@ -1,0 +1,16 @@
+@import "../../assets/styles/consts.scss";
+
+.wrapper {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding-left: 16px;
+  padding-right: 16px;
+
+  @media (max-width: $lg) {
+    padding: 24px;
+  }
+
+  @media (max-width: $xs) {
+    padding: 12px;
+  }
+}

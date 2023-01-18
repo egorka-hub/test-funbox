@@ -1,3 +1,24 @@
+@font-face {
+  font-family: "Exo";
+  font-style: normal;
+  font-weight: 300;
+  src: local('Exo'),
+    url('assets/Exo2.0-Thin.otf') format('otf');
+  font-display: swap;
+}
 
+html {
+}
 
+body {
+  margin: 0;
+  font-family: "Exo", "Arial", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  max-height: 100%;
+  height: 100%;
+}
 
+p {
+  margin: 0;
+}
