@@ -4,11 +4,31 @@ import Card from '../../components/Card';
 
 import styles from './Main.module.scss'
 
-
 const cards = [
-  {portion: 10, taste: 'фуа-гра', mouse: '', weight: '0,5'},
-  {portion: 40, taste: 'рыбой', mouse: '2', weight: '2'},
-  {portion: 100, taste: 'курой', mouse: '5', weight: '5', disable: true},
+  {
+    portion: 10,
+    taste: 'фуа-гра',
+    mouse: 0,
+    weight: '0,5',
+    additionalText: 'Печень утки разварная с артишоками.',
+    disable: false
+  },
+  {
+    portion: 40,
+    taste: 'рыбой',
+    mouse: 2,
+    weight: '2',
+    additionalText: 'Головы щучьи с чесноком да свежайшая сёмгушка.',
+    disable: false
+  },
+  {
+    portion: 100,
+    taste: 'курой',
+    mouse: 5,
+    weight: '5',
+    additionalText: 'Филе из цыплят с трюфелями в бульоне.',
+    disable: true
+  },
 ]
 
 function Main() {
@@ -18,7 +38,7 @@ function Main() {
         <Title>Ты сегодня покормил кота?</Title>
         <div className={styles.wrapper}>
           {cards.map(el => (
-            <Card {...el} />
+            <Card key={el.taste} {...el} />
           ))}
         </div>
       </Container>
